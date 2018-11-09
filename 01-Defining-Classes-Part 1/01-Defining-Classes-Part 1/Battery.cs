@@ -9,8 +9,10 @@ namespace _01_Defining_Classes_Part_1
     public class Battery
     {
         //fields
-
-        private BatteryType BatteryType;
+        private string model = null;
+        private int? hoursIdle = null;
+        private int? hoursTalk = null;
+        private BatteryType? BatteryType = null;
 
 
         // properties
