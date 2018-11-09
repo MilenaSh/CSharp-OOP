@@ -1,0 +1,7 @@
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\bin\Debug\01-Defining-Classes-Part 1.exe.config
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\bin\Debug\01-Defining-Classes-Part 1.exe
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\bin\Debug\01-Defining-Classes-Part 1.pdb
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\obj\Debug\01-Defining-Classes-Part 1.csprojAssemblyReference.cache
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\obj\Debug\01-Defining-Classes-Part 1.csproj.CoreCompileInputs.cache
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\obj\Debug\01-Defining-Classes-Part 1.exe
+D:\Milena\Training\CSharp-OOP\01-Defining-Classes-Part 1\01-Defining-Classes-Part 1\obj\Debug\01-Defining-Classes-Part 1.pdb
