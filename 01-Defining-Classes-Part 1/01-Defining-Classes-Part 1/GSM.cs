@@ -18,6 +18,8 @@ namespace _01_Defining_Classes_Part_1
 
        private static readonly GSM iPhone4S = new GSM("iPhone4S", "Apple");
 
+        private List<Call> calls;
+
         // constructors
 
         public GSM(string model, string manufacturer, int? price, string owner, Battery phoneBattery, Display phoneDisplay)
@@ -73,6 +75,10 @@ namespace _01_Defining_Classes_Part_1
 
         public Display PhoneDisplay { get; set; }
 
+        public static GSM IPhone4S { get; set; }
+
+        public List<Call> Calls { get; set; }
+
         // methods
 
         public override string ToString()
@@ -81,37 +87,37 @@ namespace _01_Defining_Classes_Part_1
 
             StringBuilder result = new StringBuilder();
 
-            if( model != null)
+            if( this.Model != null)
             {
-                result.AppendLine("Model:" + this.Model);
+                result.Append("Model:" + this.Model);
             }
 
-            if (manufacturer != null)
+            if (this.Manufacturer != null)
             {
-                result.AppendLine("Manufacturer:" + this.Manufacturer);
+                result.Append("Manufacturer:" + this.Manufacturer);
             }
 
-            if (price > 0 && price != null)
+            if (this.Price > 0 && price != null)
             {
-                result.AppendLine("Price:" + this.Price);
+                result.Append("Price:" + this.Price);
             }
 
-            if (owner != null)
+            if (this.Owner != null)
             {
-                result.AppendLine("Owner:" + this.Owner);
+                result.Append("Owner:" + this.Owner);
             }
 
-            if (PhoneBattery != null && PhoneBattery.Model != null)
+            if (this.PhoneBattery != null && this.PhoneBattery.Model != null)
             {
-                result.AppendLine("Battery Model:" + this.PhoneBattery.Model);
+                result.Append("Battery Model:" + this.PhoneBattery.Model);
             }
 
-            if (PhoneBattery != null && PhoneBattery.MyBatteryType != null)
+            if (this.PhoneBattery != null && this.PhoneBattery.MyBatteryType != null)
             {
-                result.AppendLine("Battery Type:" + this.PhoneBattery.MyBatteryType);
+                result.Append("Battery Type:" + this.PhoneBattery.MyBatteryType);
             }
 
-            if (PhoneDisplay != null && PhoneDisplay.Size > 0)
+            if (this.PhoneDisplay != null && this.PhoneDisplay.Size > 0)
             {
                 result.Append(this.PhoneDisplay.Size.ToString());
             }
