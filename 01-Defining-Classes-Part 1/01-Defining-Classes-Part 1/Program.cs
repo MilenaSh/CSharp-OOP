@@ -8,12 +8,14 @@ namespace _01_Defining_Classes_Part_1
 {
     class Program
     {
-        static void Main()
-        {
-            Console.WriteLine("In Program");
-            var test = new GSMTest();
+        // For GSM Test exrecices.
 
-            test.GSMTestMethod();
-        }
+        //static void Main()
+        //{
+        //    Console.WriteLine("In Program");
+        //    var test = new GSMTest();
+
+        //    test.GSMTestMethod();
+        //}
     }
 }

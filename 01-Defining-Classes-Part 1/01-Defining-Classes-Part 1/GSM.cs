@@ -9,16 +9,17 @@ namespace _01_Defining_Classes_Part_1
     public class GSM
     {
 
-        // fields
+       const int pricePerMinute = 37;
 
+        // fields
        private string model = null;
        private string manufacturer = null;
        private int? price = null;
        private string owner = null;
 
-       private static readonly GSM iPhone4S = new GSM("iPhone4S", "Apple");
+       private static readonly GSM iPhone4S = new GSM("iPhone4S", "Apple", 2000, "Me");
 
-        private List<Call> calls;
+       public List<Call> callHistory = new List<Call>();
 
         // constructors
 
@@ -75,9 +76,9 @@ namespace _01_Defining_Classes_Part_1
 
         public Display PhoneDisplay { get; set; }
 
-        public static GSM IPhone4S { get; set; }
+        public static GSM IPhone4S { get { return iPhone4S; } }
 
-        public List<Call> Calls { get; set; }
+        //public List<Call> CallHistory { get; set; }
 
         // methods
 
@@ -124,6 +125,58 @@ namespace _01_Defining_Classes_Part_1
 
             return result.ToString();
         }
+
+        public void AddCall(Call call)
+        {
+            this.callHistory.Add(call);
+        }
+
+        public void DeleteCall (Call call)
+        {
+            this.callHistory.Remove(call);
+        }
+
+        public void ClearCallHistory ()
+        {
+            this.callHistory.Clear();
+        }
+
+        public long CalculateTotalCallPrice ()
+        {
+            long result = 0;
+
+            foreach (var call in this.callHistory)
+            {
+                result += ((call.CallDuration / 60) * (pricePerMinute/10));
+            }
+
+            return result;
+        }
+
+
+        public string CallDataToString(Call call)
+        {
+            StringBuilder result = new StringBuilder();
+
+            if (call.CallDate != null)
+            {
+                result.Append("Calldate:" + call.CallDate.ToLongDateString());
+            }
+
+            if (call.CallDuration > 0)
+            {
+                result.Append("Call duration:" + call.CallDuration.ToString());
+            }
+
+            if (call.PhoneNumber != null)
+            {
+                result.Append("Phone number:" + call.PhoneNumber);
+            }
+
+            return result.ToString();
+        }
+
+
     }
 
 }
