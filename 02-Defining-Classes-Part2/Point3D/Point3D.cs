@@ -8,15 +8,15 @@ namespace Point3D
 {
     public struct Point3D
     {
-        private decimal x;
-        private decimal y;
-        private decimal z;
+        private double x;
+        private double y;
+        private double z;
 
         private static readonly Point3D startCoordinates = new Point3D(0, 0, 0);
 
         // properties
 
-        public decimal X
+        public double X
         {
             get
             {
@@ -28,7 +28,7 @@ namespace Point3D
             }
         }
 
-        public decimal Y
+        public double Y
         {
             get
             {
@@ -40,7 +40,7 @@ namespace Point3D
             }
         }
 
-        public decimal Z
+        public double Z
         {
             get
             {
@@ -60,7 +60,7 @@ namespace Point3D
             }
         }
 
-        public Point3D(decimal x, decimal y, decimal z)
+        public Point3D(double x, double y, double z)
         {
             this.x = x;
             this.y = y;
