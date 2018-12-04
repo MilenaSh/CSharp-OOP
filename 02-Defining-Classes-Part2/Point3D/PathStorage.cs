@@ -10,11 +10,6 @@ namespace Point3D
     public static class PathStorage
     {
 
-        public static void 
-
-        public static string myPointsFile = "/myPoints.xml";
-
-        XmlSerializer xmls = new XmlSerializer(typeof(List<Point3D>));
 
     }
 }
